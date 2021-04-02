@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
     <title>Document</title>
 </head>
 <body>
@@ -13,7 +16,8 @@
             <div class="nav-logo">
                 <img src="image2.jpg">
             </div>
-            <div class="nav-links">
+            <div class="nav-links" id = "nav-links">
+                <i class="fa fa-close" onclick="closemenu()"></i>
                 <ul>
                     <a href="'#"><li>HOME</li></a>
                     <a href="'#"><li>ABOUT</li></a>
@@ -22,6 +26,7 @@
                  </ul>
                 <button type="button" class="btn" >Signup</button>
             </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
         </div>
         <div class="banner"> 
             <h1>Food doesnt
@@ -31,10 +36,30 @@
         </div>
         <div class="vertical-bar">
             <div class="search-icon">
-
+               <i class = "fa fa-th-list"></i>
+               <i class = "fa fa-search"></i>
             </div>
-            <div class="socialicon"></div>
+            <div class="socialicon">
+                <i class = "fa fa-search"></i>
+                <i class = "fa fa-search"></i>
+                <i class = "fa fa-search"></i>
+                <i class = "fa fa-search"></i>
+            </div>
+        </div>
+        <div class="notification">
+            <div class="content"><p>subscrive jjhkhkjhk kjhkh hkh</p></div>
+            <div class="notifi-img"><img src="image4.jpg"></div>
         </div>
     </div>
+    <script>
+        var show =document.getElementById('nav-links')
+        function showmenu(){
+                show.style.right = '0';
+
+        }
+        function closemenu(){
+            show.style.right='-200px';
+        }
+    </script>
 </body>
 </html>

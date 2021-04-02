@@ -61,3 +61,110 @@ transition: .5s;}
         font-size: 30px;
         margin-bottom: 30px;
     }
+    .vertical-bar{
+        height: 100%;
+        background: rgb(167, 198, 199);
+        top:0;
+        left:0;
+        position: absolute;
+
+
+    }
+    .search-icon{
+        height: 60%;
+        width: 80px;
+    }
+    .search-icon .fa{
+        margin: 45px 23px;
+        display: block;
+        color: rgb(221, 221, 226);
+        font-size : 30px;
+        cursor: pointer;
+    }
+    .socialicon{
+        height: 35%;
+        width: 80px;
+        background: rgb(207, 197, 184);
+        text-align: center;
+        padding: absolute;
+    }
+    .socialicon .fa{
+        margin: 15px 23px;
+        display: block;
+        padding: 8px;
+    }
+    .notification{
+        display: flex;
+        width: 400px;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background: yellow;
+        align-items: center;
+    }
+    .content{
+        flex-basis: 50%;
+        padding: 10px;
+    }
+    .notifi-img{
+        flex-basis: 50%;
+    }
+    .notifi-img img{
+        width: 100%;
+        
+    }
+    .nav-bar fa{
+        display: none;
+    }
+    @media (max-width:700px){
+        .vertical-bar{
+            display: none;
+        }
+        .banner{
+            margin: 80px 40px;
+        }
+        .banner h1{
+            font-size: 50px;
+        }
+        .notification{
+            width: 100%;
+        }
+        .nav-bar{
+            padding: 10px 30px;
+
+        }
+        .fa-bars{
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+        .nav-bar .fa{
+            display: block;
+            color: olive;
+
+            margin: 10px 25px;
+            font-size: 22px;
+            cursor:pointer
+        }
+        .nav-links{
+            height: 100vh;
+            width: 200px;
+            background: orange;
+            top:0;
+            right: -200px;
+            position: absolute;
+            text-align: left;
+            z-index: 2;
+
+        }
+        .nav-links .btn{
+            float:none;
+            margin-left: 25px;
+            margin-top: 10px;
+
+        }
+        .nav-links ul a{
+            display: block;
+        }
+        
+    }
